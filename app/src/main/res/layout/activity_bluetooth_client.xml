@@ -62,6 +62,60 @@
         app:layout_constraintStart_toEndOf="@+id/buttonR"
         app:layout_constraintTop_toBottomOf="@+id/buttonD" />
 
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="a"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_b"
+        app:layout_constraintEnd_toStartOf="@+id/btn_b"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="23dp"
+        android:text="b"
+        app:layout_constraintBottom_toTopOf="@+id/btn_e"
+        app:layout_constraintEnd_toStartOf="@+id/btn_c"
+        app:layout_constraintStart_toEndOf="@+id/btn_a" />
+
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="c"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_b" />
+
+    <Button
+        android:id="@+id/btn_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="213dp"
+        android:text="d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_b"
+        app:layout_constraintStart_toStartOf="@+id/btn_a" />
+
+    <Button
+        android:id="@+id/btn_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="31dp"
+        android:text="e"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_d"
+        app:layout_constraintEnd_toEndOf="@+id/buttonC"
+        app:layout_constraintStart_toEndOf="@+id/btn_d" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"

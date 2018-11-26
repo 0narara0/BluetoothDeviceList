@@ -33,6 +33,12 @@ public class BluetoothClient extends AppCompatActivity implements View.OnClickLi
         ((Button)findViewById(R.id.buttonL)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonR)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonC)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btn_a)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btn_b)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btn_c)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btn_d)).setOnClickListener(this);
+        ((Button)findViewById(R.id.btn_e)).setOnClickListener(this);
+
     }
 
     @Override
@@ -60,6 +66,27 @@ public class BluetoothClient extends AppCompatActivity implements View.OnClickLi
             case R.id.buttonC:
                 message = "C";
                 break;
+
+            case R.id.btn_a:
+                message = "a";
+                break;
+
+            case R.id.btn_b:
+                message = "b";
+                break;
+
+            case R.id.btn_c:
+                message = "c";
+                break;
+
+            case R.id.btn_d:
+                message = "d";
+                break;
+
+            case R.id.btn_e:
+                message = "e";
+                break;
+
         }
             try {
                 bluetoothSocket.getOutputStream().write(message.getBytes());
